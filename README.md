@@ -5,9 +5,7 @@
   <a href="#deploy-">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 <p align="center">
-12
 <img src="/assets/img/video.gif" align="center" style="border-radius: 10px" />
-13
 </p>
 
 ## Tecnologias 🚀 
