@@ -1,0 +1,102 @@
+.modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.modal-background.show-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.modal {
+    display: flex;
+    height: fit-content;    
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5px;
+    font-size: 1.125em;
+    color: #798289;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+}
+.show-modal .modal{
+    animation: modal .3s;
+}
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0,0);
+    }
+}
+.modal-icon{   
+    display: flex;
+    width: 96px;
+    height: 96px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    animation: modal-icon .8s;
+}
+.modal-icon.success{
+    border: 8px solid #80c141;
+}
+.modal-icon.fail{
+    border: 8px solid #f27474;
+}
+.modal-icon svg {
+    width: 80px;
+    height: 80px;
+    padding: 10px;    
+}
+@keyframes modal-icon{
+    from{
+        opacity: 0;
+        max-height: 0;
+        max-width: 0;
+        
+        transform: rotate(0deg);
+    }
+    to{
+        opacity: 1;
+        max-height: 96px;
+        max-width: 96px;
+        transform: rotate(360deg);
+    }
+}
+.modal-text,
+.modal-text h2,
+.modal-text span {
+    padding: 10px;   
+}
+
+.modal-btn button {
+    cursor: pointer;
+    padding: 10px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: whitesmoke;
+    border: none;
+    box-shadow: 0 0 0 3px transparent;
+    border-radius: .25em;
+}
+button.success{
+    background-color: #80c141;
+}
+button.fail{
+    background-color: #f27474;
+}

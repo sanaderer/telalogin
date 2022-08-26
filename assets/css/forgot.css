@@ -1,0 +1,47 @@
+.forgot-password {
+    width: 80%;
+    text-align: center;
+    color: #1B2029;
+    padding: 15px;
+}
+
+.forgot-password span {
+    font-size: 13px;
+}
+
+.forgot-password h2 {
+    margin-bottom: 1rem;
+}
+
+.hideForm {
+    display: none;
+}
+
+.capsulaForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.hideSocial {
+    display: none;
+}
+
+.response-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 100px 0px;
+}
+
+.response-email a {
+    color: blue;
+}
