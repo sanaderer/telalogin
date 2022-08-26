@@ -13,7 +13,7 @@ let btn_class;
     }
 let modalBackground = document.createElement('div')
 modalBackground.classList.add('modal-background','show-modal');
-modalBackground.innerHTML = `https://sanaderer.github.io/tela_login/'
+modalBackground.innerHTML = `
 <div class="modal">
     <div class="modal-icon ${btn_class}">
         ${icon}
